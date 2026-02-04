@@ -1,415 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Miguel Walter P. UY | GitHub Profile</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", sans-serif;
-    }
-
-    body {
-      background: #0d1117;
-      color: #c9d1d9;
-      line-height: 1.6;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 3rem 1rem;
-      background: linear-gradient(135deg, #161b22, #0d1117);
-    }
-
-    .avatar {
-      width: 120px;
-      border-radius: 50%;
-      border: 3px solid #58a6ff;
-      margin-bottom: 1rem;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-
-    .subtitle {
-      color: #8b949e;
-      margin: 0.5rem 0 1.5rem;
-    }
-
-    .links a {
-      text-decoration: none;
-      color: #58a6ff;
-      margin: 0 0.5rem;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-
-    section {
-      margin-bottom: 2.5rem;
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #30363d;
-      padding-bottom: 0.3rem;
-    }
-
-    .skills span {
-      display: inline-block;
-      background: #21262d;
-      padding: 0.4rem 0.8rem;
-      margin: 0.3rem;
-      border-radius: 6px;
-      font-size: 0.9rem;
-    }
-
-    .projects {
-      list-style: none;
-    }
-
-    .projects li {
-      background: #161b22;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-
-    .projects a {
-      color: #58a6ff;
-      font-size: 1.1rem;
-      text-decoration: none;
-    }
-
-    .projects a:hover {
-      text-decoration: underline;
-    }
-
-    .slideshow-wrapper {
-      display: flex;
-      justify-content: center;
-      margin: 3rem 0;
-    }
-
-    .slideshow {
-      width: 100%;
-      max-width: 800px;
-      height: 450px;
-      background: #161b22;
-      border-radius: 12px;
-      border: 1px solid #30363d;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .slideshow img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: none;
-    }
-
-    .slideshow img.active {
-      display: block;
-    }
-
-    .slide-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(13, 17, 23, 0.7);
-      color: #c9d1d9;
-      border: none;
-      font-size: 1.5rem;
-      padding: 0.4rem 0.8rem;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-
-    .prev { left: 10px; }
-    .next { right: 10px; }
-
-    .snake-container {
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-    }
-
-    #snakeCanvas {
-      background: #0d1117;
-      border: 3px solid #30363d;
-      border-radius: 6px;
-      max-width: 100%;
-    }
-
-    .snake-controls {
-      margin-top: 1rem;
-      display: grid;
-      grid-template-columns: repeat(3, 60px);
-      grid-template-rows: repeat(3, 60px);
-      gap: 6px;
-      justify-content: center;
-    }
-
-    .snake-btn {
-      background: #21262d;
-      color: #c9d1d9;
-      border: 1px solid #30363d;
-      border-radius: 6px;
-      font-size: 1.2rem;
-      cursor: pointer;
-    }
-
-    .snake-btn:active {
-      background: #58a6ff;
-      color: #0d1117;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      color: #8b949e;
-      border-top: 1px solid #30363d;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippine Red Cross</title>
+    <link rel="stylesheet" href="./prelim/style.css"> <!-- Linking to the same folder CSS -->
 </head>
 <body>
+    <!-- Header section with navigation -->
+    <header>
+        <div class="logo">
+            <img src="./prelim/Red Cross.png" alt="Philippine Red Cross Logo" id="logo-img"> <!-- Replace with actual logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./prelim/about.html">About Us</a></li>
+                <li><a href="./prelim/services.html">Programs</a></li>
+                <li><a href="./prelim/events.html">Campaigns</a></li>
+                <li><a href="./prelim/volunteer.html">Volunteer</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header class="hero">
-  <img src="images/Profile2.JPG" class="avatar">
-  <h1>UY. Miguel Walter P</h1>
-  <p class="subtitle">Web Developer • Game Dev • Open Source Enthusiast</p>
-  <div class="links">
-    <a href="https://github.com/MiguelWalter" target="_blank">GitHub</a>
-  </div>
-</header>
+    <!-- Hero section with a large, prominent header -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Helping Communities, Saving Lives</h1>
+            <p>Join us in delivering essential humanitarian services and relief to those in need.</p>
+            <a href="volunteer.html" class="cta-button">Become a Volunteer</a>
+        </div>
+    </section>
 
-<main class="container">
+    <!-- Current Campaigns section -->
+    <section class="campaigns">
+        <h2>Current Campaigns</h2>
+        <div class="campaign-list">
+            <div class="campaign">
+                <h3>Blood Donation Drive</h3>
+                <p>Donate blood, save lives. Your donation makes a difference.</p>
+                <a href="events.html">Learn More</a>
+            </div>
+            <div class="campaign">
+                <h3>Disaster Relief Fund</h3>
+                <p>Support those affected by natural disasters with a donation to our relief fund.</p>
+                <a href="events.html">Learn More</a>
+            </div>
+            <div class="campaign">
+                <h3>First Aid Training</h3>
+                <p>Learn essential life-saving skills. Our certified training programs are available nationwide.</p>
+                <a href="services.html">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-<section>
-  <h2>Featured Screenshots</h2>
-  <div class="slideshow-wrapper">
-    <div class="slideshow">
-      <img src="images/HTML.jpg" class="active">
-      <img src="images/JAVA.jpg">
-      <img src="images/JAVA2.jpg">
-      <img src="images/JAVA3.jpg">
-      <img src="images/JAVA4.jpg">
-      <button class="slide-btn prev" onclick="prevSlide()">❮</button>
-      <button class="slide-btn next" onclick="nextSlide()">❯</button>
-    </div>
-  </div>
-</section>
+    <!-- Footer section with contact information -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Programs & Services</a></li>
+                <li><a href="events.html">Campaigns</a></li>
+                <li><a href="volunteer.html">Volunteer & Donate</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2026 Philippine Red Cross. All Rights Reserved.</p>
+    </footer>
 
-<section>
-  <h2>About Me</h2>
-  <p>Hi! I'm a student from University of Perpetual Help who is still learning more about coding.</p>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Git</span>
-  </div>
-</section>
-
-<section>
-  <h2>Projects</h2>
-  <ul class="projects">
-    <li>
-      <a href="https://miguelwalter.github.io/Fighting-game-/" target="_blank">🔥 Fighting Game</a>
-      <p>2D fighting game using JavaScript.</p>
-    </li>
-    <li>
-      <a href="#">🌐 Portfolio Website</a>
-      <p>Personal portfolio built with HTML, CSS, JS.</p>
-    </li>
-  </ul>
-</section>
-
-<section>
-  <h2>🎮 Play Snake</h2>
-  <div class="snake-container">
-    <p>Score: <span id="snakeScore">0</span></p>
-    <canvas id="snakeCanvas" width="400" height="400"></canvas>
-
-    <div class="snake-controls">
-      <div></div>
-      <button class="snake-btn" onclick="setDir('UP')">▲</button>
-      <div></div>
-      <button class="snake-btn" onclick="setDir('LEFT')">◄</button>
-      <div></div>
-      <button class="snake-btn" onclick="setDir('RIGHT')">►</button>
-      <div></div>
-      <button class="snake-btn" onclick="setDir('DOWN')">▼</button>
-      <div></div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2026 Miguel Walter P. UY</p>
-</footer>
-
-<script>
-/* PREVENT ARROW KEYS FROM SCROLLING */
-window.addEventListener("keydown", function(e) {
-  if (["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(e.key)) {
-    e.preventDefault();
-  }
-}, { passive: false });
-
-/* SLIDESHOW */
-const slides = document.querySelectorAll(".slideshow img");
-let current = 0;
-
-function showSlide(i) {
-  slides.forEach(slide => slide.classList.remove("active"));
-  slides[i].classList.add("active");
-}
-function nextSlide() {
-  current = (current + 1) % slides.length;
-  showSlide(current);
-}
-function prevSlide() {
-  current = (current - 1 + slides.length) % slides.length;
-  showSlide(current);
-}
-setInterval(nextSlide, 4000);
-
-/* 🐍 SNAKE GAME WITH PROGRESSIVE SPEED AND WALL GAMEOVER */
-(() => {
-  const canvas = document.getElementById("snakeCanvas");
-  const ctx = canvas.getContext("2d");
-  const scoreEl = document.getElementById("snakeScore");
-
-  const TILE = 20;
-  const COLS = canvas.width / TILE;
-  const ROWS = canvas.height / TILE;
-
-  let snake, food, dir, nextDir, score;
-  let gameOver = false;
-  let speed = 120;
-  let gameInterval;
-
-  function start() {
-    snake = [{x:5,y:5},{x:4,y:5},{x:3,y:5}];
-    dir = nextDir = "RIGHT";
-    score = 0;
-    scoreEl.textContent = score;
-    speed = 120;
-    spawnFood();
-    gameOver = false;
-    clearInterval(gameInterval);
-    gameInterval = setInterval(update, speed);
-  }
-
-  function spawnFood() {
-    food = {
-      x: Math.floor(Math.random() * COLS),
-      y: Math.floor(Math.random() * ROWS)
-    };
-  }
-
-  function update() {
-    if (gameOver) return;
-
-    dir = nextDir;
-    const head = {...snake[0]};
-
-    if (dir==="UP") head.y--;
-    if (dir==="DOWN") head.y++;
-    if (dir==="LEFT") head.x--;
-    if (dir==="RIGHT") head.x++;
-
-    if (head.x < 0 || head.y < 0 || head.x >= COLS || head.y >= ROWS) {
-      endGame();
-      return;
-    }
-
-    if (snake.some(s=>s.x===head.x && s.y===head.y)) {
-      endGame();
-      return;
-    }
-
-    snake.unshift(head);
-
-    if (head.x===food.x && head.y===food.y){
-      score += 10;
-      scoreEl.textContent = score;
-      spawnFood();
-      speed = Math.max(50, speed - 5);
-      clearInterval(gameInterval);
-      gameInterval = setInterval(update, speed);
-    } else snake.pop();
-
-    draw();
-  }
-
-  function draw() {
-    ctx.fillStyle = "#0d1117";
-    ctx.fillRect(0,0,canvas.width,canvas.height);
-
-    ctx.fillStyle = "#58a6ff";
-    ctx.fillRect(food.x*TILE, food.y*TILE, TILE, TILE);
-
-    snake.forEach((s,i)=>{
-      ctx.fillStyle = i===0 ? "#c9d1d9" : "#8b949e";
-      ctx.fillRect(s.x*TILE, s.y*TILE, TILE, TILE);
-    });
-
-    if (gameOver) {
-      ctx.fillStyle = "#ff5555";
-      ctx.font = "bold 30px Arial";
-      ctx.textAlign = "center";
-      ctx.fillText("GAME OVER", canvas.width/2, canvas.height/2);
-      ctx.font = "16px Arial";
-      ctx.fillText("Press any arrow key or button to restart", canvas.width/2, canvas.height/2 + 30);
-    }
-  }
-
-  function endGame() {
-    gameOver = true;
-    clearInterval(gameInterval);
-    draw();
-  }
-
-  window.setDir = d => {
-    if (gameOver) { start(); return; }
-    if (
-      (d==="UP" && dir!=="DOWN") ||
-      (d==="DOWN" && dir!=="UP") ||
-      (d==="LEFT" && dir!=="RIGHT") ||
-      (d==="RIGHT" && dir!=="LEFT")
-    ) nextDir = d;
-  };
-
-  document.addEventListener("keydown", e => {
-    if (["ArrowUp","w","W"].includes(e.key)) setDir("UP");
-    if (["ArrowDown","s","S"].includes(e.key)) setDir("DOWN");
-    if (["ArrowLeft","a","A"].includes(e.key)) setDir("LEFT");
-    if (["ArrowRight","d","D"].includes(e.key)) setDir("RIGHT");
-  });
-
-  start();
-})();
-</script>
-
+    <script src="script.js"></script> <!-- Linking JavaScript file -->
 </body>
 </html>

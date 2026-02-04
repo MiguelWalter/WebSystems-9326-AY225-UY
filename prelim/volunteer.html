@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer & Donate - Philippine Red Cross</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Replace the src URL with the actual logo image URL -->
+            <img src="Red Cross.png" alt="Philippine Red Cross Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Programs and Services</a></li>
+                <li><a href="events.html">Campaigns</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="volunteer-donate.html">Volunteer & Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="volunteer-header">
+        <h1>Volunteer & Donate</h1>
+        <p>Your support helps us save lives. Join our mission!</p>
+    </section>
+
+    <section class="forms-container">
+        <div class="form-card">
+            <h2>Volunteer Registration</h2>
+            <form action="thank-you.html" method="POST" id="volunteer-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="interests">What type of volunteer work are you interested in?</label>
+                <select id="interests" name="interests" required>
+                    <option value="blood-donation">Blood Donation</option>
+                    <option value="disaster-relief">Disaster Relief</option>
+                    <option value="admin-support">Administrative Support</option>
+                    <option value="event-management">Event Management</option>
+                </select>
+
+                <button type="submit">Sign Up to Volunteer</button>
+            </form>
+        </div>
+
+        <div class="form-card">
+            <h2>Donate to Save Lives</h2>
+            <form action="thank-you.html" method="POST" id="donation-form">
+                <label for="donor-name">Donor Name:</label>
+                <input type="text" id="donor-name" name="donor-name" required>
+
+                <label for="donation-amount">Donation Amount (₱):</label>
+                <input type="number" id="donation-amount" name="donation-amount" required min="100" step="50">
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+
+                <button type="submit">Donate Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Philippine Red Cross | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigns - Philippine Red Cross</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking to the same folder CSS -->
+    <script src="campaigns.js" defer></script> <!-- Link to external JS file (for validation) -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="Red Cross.png" alt="Philippine Red Cross Logo" id="logo-img"> <!-- Replace with actual logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Programs</a></li>
+                <li><a href="events.html">Campaigns</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section for Campaigns -->
+    <section class="hero-campaigns">
+        <div class="hero-content">
+            <h1>Our Ongoing Campaigns</h1>
+            <p>Help us make a difference by contributing to our Blood Donation Drive and Disaster Relief Fund.</p>
+        </div>
+    </section>
+
+    <!-- Campaigns Forms Section -->
+    <section class="campaigns-form">
+        <div class="form-container">
+            <!-- Blood Donation Drive Form -->
+            <div class="form-box">
+                <h2>Blood Donation Drive Registration</h2>
+                <form id="blood-donation-form" action="#" method="POST" onsubmit="return validateBloodDonation()">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" max="65" required>
+
+                    <label for="blood-type">Blood Type:</label>
+                    <select id="blood-type" name="blood-type" required>
+                        <option value="">Select Blood Type</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="tel" id="contact-number" name="contact-number" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <button type="submit">Submit Blood Donation</button>
+                </form>
+            </div>
+
+            <!-- Disaster Relief Fund Donation Form -->
+            <div class="form-box">
+                <h2>Disaster Relief Fund Donation</h2>
+                <form id="disaster-relief-form" action="#" method="POST" onsubmit="return validateDisasterRelief()">
+                    <label for="donor-name">Full Name:</label>
+                    <input type="text" id="donor-name" name="donor-name" required>
+
+                    <label for="donation-amount">Donation Amount (PHP):</label>
+                    <input type="number" id="donation-amount" name="donation-amount" min="1" required>
+
+                    <label for="contact-email">Email Address:</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+
+                    <label for="payment-method">Payment Method:</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="Bank Transfer">Bank Transfer</option>
+                        <option value="Credit Card">Credit Card</option>
+                        <option value="PayPal">PayPal</option>
+                        <option value="Cash on Delivery">Cash on Delivery</option>
+                    </select>
+
+                    <button type="submit">Donate Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Philippine Red Cross. All rights reserved.</p>
+    </footer>
+</body>
+</html>
